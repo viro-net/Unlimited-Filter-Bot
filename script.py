@@ -1,19 +1,19 @@
 class Script(object):
 
-    START_MSG = """<b>Hy {},
+    START_MSG = """<b>🛐 जय श्री राम🚩 {},
 
-I'm an advanced filter bot with many capabilities!
-There is no practical limits for my filtering capacity :)
+♿I'm An Advanced Filter Bot With Many Capabilities !
+🚼There Is No Practical Limits For My Filtering Capacity. O⁠_⁠o
 
-See <i>/help</i> for commands and more details.</b>
+♿ Hit /help to find out more about how to use me to my full potential.<b>
 """
 
 
     HELP_MSG = """
-<i>Add me as admin in your group and start filtering :)</i>
+<i>**🚼Add Me As Admin In Your Group And Start Filtering**</i>
 
 
-<b>Basic Commands;</b>
+<b>♿Basic Commands🚼</b>
 
 /start - Check if I'm alive!
 /help - Command help
@@ -22,9 +22,9 @@ See <i>/help</i> for commands and more details.</b>
 
 <b>Filter Commands;</b>
 
-<code>/add name reply</code>  -  Add filter for name
+<code>/add «name» reply</code>  -  Add filter for name
 
-<code>/del name</code>  -  Delete filter
+<code>/del </code>  -  Delete filter
 
 <code>/delall</code>  -  Delete entire filters (Group Owner Only!)
 
