@@ -103,7 +103,7 @@ async def showinfo(client, message):
         f"<b>Name</b> : {name}\n\n"
         f"<b>User ID</b> : <code>{id}</code>\n\n"
         f"<b>Username</b> : {user_name}\n\n"
-        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'>Click here!</a>\n\n"
+        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'>**♿CLICK HERE🚼**</a>\n\n"
         f"<b>DC ID</b> : {dcid}\n\n",
         quote=True,
         parse_mode="html"
@@ -243,12 +243,12 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Subscribe", url="https://www.youtube.com/@GreyMattersYT"),
+                    InlineKeyboardButton("🚼 ANIME-CHANNEL 🚼", url="https://t.me/anime_ongoing_dub"),
                     InlineKeyboardButton("About Me", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/GreyMatter_Bots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/greymatter_support")
+                    InlineKeyboardButton("♿ DEVELOPER ♿", url="https://t.me/StupidBoi69"),
+                    InlineKeyboardButton("🛗 ANIME-GROUP 🛗", url="https://t.me/AnimeDownloaderChat_Bot")
                 ]
             ]
         ),
@@ -265,11 +265,11 @@ async def about(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/Greymattersbot/Unlimited-Filter-Bot")
+                        "♿ SOURCE CODE (PAID) 🚼", url="https://t.me/StupidBoi69")
                 ],
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("CLOSE", callback_data="close_data"),
+                    InlineKeyboardButton("♿BACK♿", callback_data="help_data"),
+                    InlineKeyboardButton("🚼CLOSE🚼", callback_data="close_data"),
                 ]                
             ]
         ),
