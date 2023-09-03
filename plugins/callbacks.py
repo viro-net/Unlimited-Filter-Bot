@@ -73,8 +73,8 @@ async def cb_handler(client, query):
                         "♿ SOURCE CODE (PAID) 🚼", url="https://t.me/StupidBoi69")
                 ],
                 [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("CLOSE", callback_data="close_data"),
+                    InlineKeyboardButton("♿BACK♿", callback_data="help_data"),
+                    InlineKeyboardButton("🚼CLOSE🚼", callback_data="close_data"),
                 ]                
             ]
         )
