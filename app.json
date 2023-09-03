@@ -9,7 +9,7 @@
         "TroJanzHEX"
     ],
     "website": "https://TroJanzHEX.me",
-    "repository": "https://github.com/nero-bc/Unlimited-Filter-Bot",
+    "repository": "https://github.com/TroJanzHEX/Unlimited-Filter-Bot",
     "success_url": "https://telegram.dog/TroJanzHEX",
     "env": {
         "WEBHOOK": {
@@ -43,7 +43,7 @@
         },
         "SAVE_USER": {
             "description": "Do you need to save user details? Usefull for getting userinfo and total user counts. May reduce filter capacity. Give yes or no",
-            "value": "yes",
+            "value": "no",
             "required": false
         },
         "HEROKU_API_KEY": {
