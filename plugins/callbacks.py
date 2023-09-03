@@ -47,12 +47,12 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Subscribe", url="https://www.youtube.com/@GreyMattersYT"),
+                    InlineKeyboardButton("🚼 ANIME-CHANNEL 🚼", url="https://t.me/anime_ongoing_dub"),
                     InlineKeyboardButton("About Me", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/GreyMatter_Bots"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/greymatter_support")
+                    InlineKeyboardButton("♿ DEVELOPER ♿", url="https://t.me/StupidBoi69"),
+                    InlineKeyboardButton("🛗 ANIME-GROUP 🛗", url="https://t.me/AnimeDownloaderChat_Bot")
                 ]
             ]
         )
@@ -70,7 +70,7 @@ async def cb_handler(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/Greymattersbot/Unlimited-Filter-Bot")
+                        "♿ SOURCE CODE (PAID) 🚼", url="https://t.me/StupidBoi69")
                 ],
                 [
                     InlineKeyboardButton("BACK", callback_data="help_data"),
@@ -102,11 +102,11 @@ async def cb_handler(client, query):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
+                    await query.message.edit_text("**🛂 Make Sure I'm Admin (with full permission) In Your Group !**", quote=True)
                     return
             else:
                 await query.message.edit_text(
-                    "I'm not connected to any groups!\nCheck /connections or connect to any groups",
+                    "**🛂 I'm Not Connected To Any Groups!\nCheck /connections Or Connect To Any Groups**",
                     quote=True
                 )
                 return
@@ -122,7 +122,7 @@ async def cb_handler(client, query):
         if (st.status == "creator") or (str(userid) in Config.AUTH_USERS):    
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("You need to be Group Owner or an Auth User to do that!",show_alert=True)
+            await query.answer("**🛂 You Need To Be Group Owner Or An Auth User To Do That !**",show_alert=True)
     
     elif query.data == "delallcancel":
         userid = query.from_user.id
@@ -142,7 +142,7 @@ async def cb_handler(client, query):
                 except:
                     pass
             else:
-                await query.answer("Thats not for you!!",show_alert=True)
+                await query.answer("**🛃 Thats's Not For You ! 🚮**",show_alert=True)
 
 
     elif "groupcb" in query.data:
@@ -225,7 +225,7 @@ async def cb_handler(client, query):
 
         if delcon:
             await query.message.edit_text(
-                "Successfully deleted connection"
+                "**🛃 Successfully Deleted Connection 🚮"
             )
             return
         else:
@@ -243,7 +243,7 @@ async def cb_handler(client, query):
         groupids = await all_connections(str(userid))
         if groupids is None:
             await query.message.edit_text(
-                "There are no active connections!! Connect to some groups first.",
+                "**♿ There Are No Active Connections !**,\n**🚼 Connect To Some Groups First.**",
             )
             return
         buttons = []
@@ -267,7 +267,7 @@ async def cb_handler(client, query):
                 pass
         if buttons:
             await query.message.edit_text(
-                "Your connected group details ;\n\n",
+                "**🛂 Your Connected Group Details;**\n\n",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
