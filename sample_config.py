@@ -30,7 +30,7 @@ class Config(object):
     # To save user details (Usefull for getting userinfo and total user counts)
     # May reduce filter capacity :(
     # Give yes or no
-    SAVE_USER = os.environ.get("SAVE_USER", "no").lower()
+    SAVE_USER = os.environ.get("SAVE_USER", "yes").lower()
 
 
     # Go to https://dashboard.heroku.com/account, scroll down and press Reveal API
