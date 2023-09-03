@@ -103,7 +103,7 @@ async def showinfo(client, message):
         f"<b>Name</b> : {name}\n\n"
         f"<b>User ID</b> : <code>{id}</code>\n\n"
         f"<b>Username</b> : {user_name}\n\n"
-        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'♿CLICK HERE🚼</a>\n\n"
+        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'>♿CLICK HERE🚼</a>\n\n"
         f"<b>DC ID</b> : {dcid}\n\n",
         quote=True,
         parse_mode="html"
@@ -178,7 +178,7 @@ async def bot_status(client,message):
             else:
                 quota_details = ""
         except:
-            print("Check Your Heroku Api Key")
+            print("Check your Heroku API key")
             quota_details = ""
     else:
         quota_details = ""
@@ -198,7 +198,7 @@ async def bot_status(client,message):
         disk = ""
 
     await message.reply_text(
-        "**Current Status Of Your Bot !**\n\n"
+        "**Current status of your bot!**\n\n"
         f"> __**{filters}** filters across **{chats}** chats__\n\n"
         f"{userstats}"
         f"> __BOT Uptime__ : **{uptime}**\n\n"
@@ -244,7 +244,7 @@ async def help(client, message):
             [
                 [
                     InlineKeyboardButton("🚼ANIME-CHANNEL🚼", url="https://t.me/anime_ongoing_dub"),
-                    InlineKeyboardButton("About Me", callback_data="about_data")
+                    InlineKeyboardButton("🚹ABOUT ME🚺", callback_data="about_data")
                 ],
                 [
                     InlineKeyboardButton("♿DEVELOPER♿", url="https://t.me/StupidBoi69"),
@@ -268,8 +268,8 @@ async def about(client, message):
                         "♿ SOURCE CODE (PAID) 🚼", url="https://t.me/StupidBoi69")
                 ],
                 [
-                    InlineKeyboardButton("♿ BACK ♿", callback_data="help_data"),
-                    InlineKeyboardButton("🚼 CLOSE 🚼", callback_data="close_data"),
+                    InlineKeyboardButton("♿BACK♿", callback_data="help_data"),
+                    InlineKeyboardButton("🚼CLOSE🚼", callback_data="close_data"),
                 ]                
             ]
         ),
