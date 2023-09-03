@@ -103,7 +103,7 @@ async def showinfo(client, message):
         f"<b>Name</b> : {name}\n\n"
         f"<b>User ID</b> : <code>{id}</code>\n\n"
         f"<b>Username</b> : {user_name}\n\n"
-        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'>♿CLICK HERE🚼</a>\n\n"
+        f"<b>Permanant USER link</b> : <a href='tg://user?id={id}'>**♿CLICK HERE🚼**</a>\n\n"
         f"<b>DC ID</b> : {dcid}\n\n",
         quote=True,
         parse_mode="html"
@@ -243,12 +243,12 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚼ANIME-CHANNEL🚼", url="https://t.me/anime_ongoing_dub"),
-                    InlineKeyboardButton("🚹ABOUT ME🚺", callback_data="about_data")
+                    InlineKeyboardButton("🚼 ANIME-CHANNEL 🚼", url="https://t.me/anime_ongoing_dub"),
+                    InlineKeyboardButton("About Me", callback_data="about_data")
                 ],
                 [
-                    InlineKeyboardButton("♿DEVELOPER♿", url="https://t.me/StupidBoi69"),
-                    InlineKeyboardButton("🛗ANIME-GROUP🛗", url="https://t.me/AnimeDownloaderChat_Bot")
+                    InlineKeyboardButton("♿ DEVELOPER ♿", url="https://t.me/StupidBoi69"),
+                    InlineKeyboardButton("🛗 ANIME-GROUP 🛗", url="https://t.me/AnimeDownloaderChat_Bot")
                 ]
             ]
         ),
